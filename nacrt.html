@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>3. DN :: OIS 2021/2022</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="icon" href="./favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="knjiznice/js/koda.js"></script>
+    <style>
+      #speed-container {
+        position: fixed;
+        left: 2em;
+        bottom: 0;
+            }
+    </style>
+  </head>
+  <body>
+    <!-- ZAČETEK: Menujska vrstica na vrhu spletne strani -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- ZAČETEK: Ime vaše aplikacije -->
+        <a class="nav-link navbar-brand" href="index.html"
+          >Asteoridi</a
+        >
+        <!-- KONEC: Ime vaše aplikacije -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menujska-vrstica"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" title="Prikaži menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menujska-vrstica">
+          <div class="navbar-nav">
+            <a class="nav-link" href="opis.html"><i class="fa-solid fa-book me-1"></i>Opis ideje</a>
+            <a class="nav-link" href="nacrt.html"
+              ><i class="fa-solid fa-diagram-project me-1"></i>Načrt informacijske rešitve</a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-gears me-1"></i>Generiranje podatkov</a>
+           </div>
+        </div>
+      </div>
+    </nav>
+    <!-- KONEC: Menujska vrstica na vrhu spletne strani -->
+
+    <!-- ZAČETEK: Načrt informacijske rešitve -->
+    <div class="container">
+      <div class="card text-center m-3 mb-4">
+        <div class="card-header pb-0">
+          <h4>
+            <i class="fa-solid fa-diagram-project me-2"></i>Diagram primerov
+            uporabe
+          </h4>
+        </div>
+        <div class="card-body">
+          <!-- ZAČETEK: Diagram primerov uporabe -->
+          <p>
+            Naš enostavni primer je sestavljen iz 4 primerov uporabe, ki so
+            prikazani na diagramu primerov uporabe. Glavno funkcionalnost ima tabela
+            asteoridov. 
+          </p>
+          <img
+            src="https://teaching.lavbic.net/plantuml/png/RL7DIYGn43vldgB0YtFmA7WGGSK5GLHGzh3CfKngkckwkqgIp8oux2Fu4FiYUzBtsdIdxSawSmbKVJ_vlYGqBC_eiOCdj4tbTINEQgiUeaS92IA99amiHmjSjV6HNk9vovLq2GQR3l85QnN8OY3uPQ3mlHnyDpL7wlVg7VcyEpZ-Vd5oTPcswBrkylAfJKhpkx156zLV5BfC-KhOUw5fQH4XAdYkwWYEFTd8AiOC8dZe-pOuJhSOyFp-UfmUQq9RirJzAcf5iIO_bFiiUlZZMQkM7EXSdD1Qk9xBAmftlDOG-sbDGTibpW037FxSGhFIvZeqA4kQ2uRqeifEro0uJnz1bXVy_YOC3YMRZEJ_3MIXlaFBI-gpf2ZeXp2VXbndyUs0f019_csIN_NDQDL1f115GJjF7t_J7OFcBasl-SAo-iSVUd_BKGRQ3JU9OyONXIEd6paw-r9w1vtQx215rC82JZCXuVcpPcQqs8DC5dkmiTKMARzxPlesMsnwWfsKG-j_"
+            class="mt-4 mb-4"
+          />
+          <p class="text-muted small mb-0">
+            Diagram pripravite z
+            <a
+              href="https://teaching.lavbic.net/plantuml/uml/VP4nJmCn38Lt_mghNM3eYDG9jRGmTw0RYo_dkqQNYol7fuAg_dVIku8Y42nHzBttRCTP9IEreG-utUrnoxq0fCx78odrM97hMfKXraw2A9fIJ5dYQ8MhveQ6OA_yRklWszXd6Lq-M0lNaDXHOZm35dKtOztJmHjVkMZDEh7vmylJydcJAQdAQO9Lo4cu56N9MURd7-79zrUZCX_5_f-faMZJwrkbZ-y-1Re016uCJL1zUp2ilR8pBn5W6c-sxl8oPaW9nnl0rpRkTkfxrhSu74MfulkhvmRtDmGmXd2nUFmjhJZM-Vi-0G00"
+              target="_blank"
+              ><i class="fa-solid fa-pen-to-square me-1"></i>PlantUML</a
+            >, ki ga gostimo na lastnem strežniku in pri tem uporabite
+            <a href="https://plantuml.com/use-case-diagram" target="_blank"
+              ><i class="fa-solid fa-book me-1"></i>Use Case Diagram</a
+            >
+          </p>
+          <!-- KONEC: Diagram primerov uporabe -->
+        </div>
+      </div>
+
+      <div class="card text-center m-3 mb-4">
+        <div class="card-header pb-0">
+          <h4>
+            <i class="fa-solid fa-diagram-project me-2"></i>Razredni diagram
+          </h4>
+        </div>
+        <div class="card-body">
+          <!-- ZAČETEK: Razredni diagram -->
+          <p>
+            Na <b>VOPC diagramu</b> prikažemo strukture aplikacije,
+            ki je sestavljena iz naslednjih osrednjih komponent:
+          </p>
+          <ul>
+            <li>
+              mejni razred <b>Index</b>, ki je implementiran v obliki datoteke
+              index.html,
+            </li>
+            <li>
+              kontrolni razred <b>Koda</b>, ki je implementiran v obliki
+              datoteke koda.js in
+            </li>
+            <li>
+              kontrolni razred <b>Podatki</b>, ki je implementiran v obliki
+              datoteke podatki.js in
+            </li>
+            <li>
+              mejni razred <b>TeachingAPI</b>, ki predstavlja vmesnik (API) do
+              oddaljenega strežnika Teaching API.
+            </li>
+            <li>
+              mejni razred <b>NasaAPI</b>, ki predstavlja vmesnik (API) do
+              oddaljenega strežnika NASA API.
+            </li>
+          </ul>
+          <img
+            src= "https://teaching.lavbic.net/plantuml/png/dLJ9Rjim4BthAmZu44UDBFHGe12204xY52w2E8YTdW848sbiqQ98WQITfUYlzTR_wb2BBMT7BeHcEE_DcqKqEPSbQ2XO8i0OzjjZB8OaNsYrakc94agpkunRT7wbKzIrh_VjxFZxw8IyeBMwgvsn8AJtnpCRKgaiVfXpeU61N7CbxOx3uhqT2hwG1KhB4ZfGxsJPaYSLpcgGXgueqjlRXgKuXvMmivVeCfuYIxXE17fxbL5W4QCsddTIDMOiKxndXuUnImFwuUYeggkNQ-GQbkC28qQ9LlRMoUtSN6hE2ynVkJq5kogkrDBODJmDCHQqZLWA5akUvAIId317J6SG2yfdhEObfhTEBzq50HrVjW7zVUfI8xzKH9DpAY2Xzceb6lr138zGCyb5RHkyrgBhShIz1KhKJl6KEWQQB_lxBgQrmALkQfeOZ1Kb9q-faPh8jvwUabS8wKDNMqxQFYyi0vaA79vHrTHCw9CkvtPiDDfp1IccphT9DqD8Cc8ONewVp_Emsg38RTvHPcrfeZ2q3M0WO1tpP23HXfFnD7GAmrP7S3cPpgAeQK4_eo9H1yELpPJcZs2vagrqQjpFwUHY4YynSOCEJaVdezaeYcBD3NyJUi36fnsQjUAfQ_EF4QLkHXokjQI3Y7P2Tp8-1tI23rWkbglaLUpbTGSBZwjgArx77p0Kw7ursabqMnih9H1aHtvRVqjQz-4jHHLoCz4BCF3XQKB91v80WuLQXn9LgD7OSFsr-exfBJEu6MhTf-FAoMo6JArHWn1iQEZH80tkvuJ0e7LY6lb1K3yMhKrKtPtpgdNV1BLMKuFdLK-cvelCCZLl_zk8ZOkoRYDrMweRkNQfAJJdDzBtcx31qlZ-u0c5o_0UtiLqmR6oLXKENQby3yvTq22pXNY1eLDxn7uLQ2JFMT_toVRz_HkPAgRI5CIINfW5E3eQC_xxIs7W-yvk6LW5UPQWQTqdoI-6qs53_1y0"
+            class="mt-4 mb-4"
+          />
+          <p class="text-muted small mb-0">
+            Diagram pripravite z
+            <a
+              href="https://teaching.lavbic.net/plantuml/uml/VP4nJmCn38Lt_mghNM3eYDG9jRGmTw0RYo_dkqQNYol7fuAg_dVIku8Y42nHzBttRCTP9IEreG-utUrnoxq0fCx78odrM97hMfKXraw2A9fIJ5dYQ8MhveQ6OA_yRklWszXd6Lq-M0lNaDXHOZm35dKtOztJmHjVkMZDEh7vmylJydcJAQdAQO9Lo4cu56N9MURd7-79zrUZCX_5_f-faMZJwrkbZ-y-1Re016uCJL1zUp2ilR8pBn5W6c-sxl8oPaW9nnl0rpRkTkfxrhSu74MfulkhvmRtDmGmXd2nUFmjhJZM-Vi-0G00"
+              target="_blank"
+              ><i class="fa-solid fa-pen-to-square me-1"></i>PlantUML</a
+            >, ki ga gostimo na lastnem strežniku in pri tem uporabite
+            <a href="https://plantuml.com/use-case-diagram" target="_blank"
+              ><i class="fa-solid fa-book me-1"></i>Use Case Diagram</a
+            >
+          </p>
+          <!-- KONEC: Razredni diagram -->
+        </div>
+      </div>
+
+      <div class="card text-center m-3 mb-4">
+        <div class="card-header pb-0">
+          <h4>
+            <i class="fa-solid fa-diagram-project me-2"></i>Diagram zaporedja
+          </h4>
+        </div>
+        <div class="card-body">
+          <!-- ZAČETEK: Diagram zaporedja -->
+          <p>
+            Diagram zaporeda predstavlja realizacijo
+            osnovnega toka dogodkov uporabe- prikaz tabele asteroidov.
+          </p>
+          <img
+            src="https://teaching.lavbic.net/plantuml/png/bL9DRzD04BtlhnY52xWYEI6XI5Ho2v4AgAeKUhDKZUr9ih4pOtRNQG3nO_f7kEL_CTvycHG9SLXhDE_DUszdlR0bmKmavB8nnbUM6tIuWXoBQkwavRAGMXm4X-mL8WuzLaapRElmXJOXhUsSLmf3eHzoFHOMGToLk9BSTHJBQrL_HZWwxaYF2nkeJt9E7dlp03tGqzUMkA3FTgQ7gU_suitawks7wx-mxz05MzW6EVp_m3_YiWI27mPwc-mJjTzpd3lyfgsPS2XEZPycBWRk6t6OiwsCQKu1O32-uP8s0q0FiJf3Fqc94UoAC-msdQQGtjr4_1OzQcrCp2nhSZiz6CEqgIamPkox7o3Z9B4TCbo4LPqaPWIdaSv59pvECounQBl2ZbzfUxZqP-IzfV8dBLU55SQQnGURCICaoI5VadGQQaxRNxg0LcMwfTWrgj9fBySANb_kirzSc5tHwwZTQ0Hh9cz1CxQh4oMcZum5SbbJEY4gtsF0bwzCnFxWg4hbo3fSGi2SQe7KwpylrilwEVrC4TvT0g5xq1CM3v8lgGZ-E7NOJFIP4vEBDet2eTBjwOD5fx8r9HrNSNZ2dShnoZ6f_TxOxPFT9nrdhBt1lMze-yIolmSVxd5Gb_Lmy1i0" class="mt-4 mb-4"
+          />
+          <p class="text-muted small mb-0">
+            Diagram pripravite z
+            <a
+              href="https://teaching.lavbic.net/plantuml/uml/VP4nJmCn38Lt_mghNM3eYDG9jRGmTw0RYo_dkqQNYol7fuAg_dVIku8Y42nHzBttRCTP9IEreG-utUrnoxq0fCx78odrM97hMfKXraw2A9fIJ5dYQ8MhveQ6OA_yRklWszXd6Lq-M0lNaDXHOZm35dKtOztJmHjVkMZDEh7vmylJydcJAQdAQO9Lo4cu56N9MURd7-79zrUZCX_5_f-faMZJwrkbZ-y-1Re016uCJL1zUp2ilR8pBn5W6c-sxl8oPaW9nnl0rpRkTkfxrhSu74MfulkhvmRtDmGmXd2nUFmjhJZM-Vi-0G00"
+              target="_blank"
+              ><i class="fa-solid fa-pen-to-square me-1"></i>PlantUML</a
+            >, ki ga gostimo na lastnem strežniku in pri tem uporabite
+            <a href="https://plantuml.com/use-case-diagram" target="_blank"
+              ><i class="fa-solid fa-book me-1"></i>Use Case Diagram</a
+            >
+          </p>
+          <!-- KONEC: Diagram zaporedja -->
+        </div>
+      </div>
+    </div>
+    <!-- KONEC: Načrt informacijske rešitve -->
+    <div id="speed-container" class="range-field">
+      <label for="speed-slider"></label>
+      <input value="10" type="range" id="speed-slider" step="1" min="0" max="100" />
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+  <script src="knjiznice/js/zvezde.js"></script>
+  </body>
+</html>
